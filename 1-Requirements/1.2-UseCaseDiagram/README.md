@@ -1,7 +1,7 @@
 ## діаграма варіантів використання
 @startuml
 actor "Інспектор з охорони праці" as Inspector
-actor "Менеджер з ризиків" as RiskManager
+actor "Менеджер проєкту" as Manager
 actor "Працівники будівництва" as Workers
 
 usecase "Моніторинг поточних погодних умов" as UC1
@@ -13,8 +13,8 @@ usecase "Ознайомлення з інструкціями безпеки" as
 
 Inspector -- UC1
 Inspector -- UC2
-RiskManager -- UC3
-RiskManager -- UC4
+Manager -- UC3
+Manager -- UC4
 Workers -- UC5
 Workers -- UC6
 @enduml
